@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -19,9 +20,13 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="text-lg font-semibold tracking-tight text-gray-900">
-              MAPLE SOCIAL CLUB
-            </span>
+            <Image
+              src="/msc flat logo.svg"
+              alt="Maple Social Club"
+              width={174}
+              height={12}
+              priority
+            />
           </Link>
         </div>
 
